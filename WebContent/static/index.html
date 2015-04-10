@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Find which country you may want to get education</title>
+  <link rel="stylesheet" href="../media/css/jquery-ui.css">
+  <link rel="stylesheet" href="../media/css/index.css">
+  <script src="../media/js/jquery-1.7.1.js"></script>
+  <script src="../media/js/jquery-ui.js"></script>
+  <script src="../media/js/slider.js"></script>
+
+
+
+
+</head>
+<body>
+
+  <div class="bodyDiv">
+    <p class="font-size_25 font">Find which country you may want to get education !</p>
+    <div id="ValueSelect">   
+      <div id="LivingStandard" style=" display: none;">
+
+          <div id="Lving">
+              <p class="font-size_15 font">The utility of the cost of living envirnment:</p>
+              <p>
+                <label for="Living_value0">Utility of "High" :</label>
+                <input type="text" id="Living_value0" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Living_value-0" style="width: 200px;"></div>
+
+              <p>
+                <label for="Living_value1">Utility of "Mid" :</label>
+                <input type="text" id="Living_value1" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Living_value-1" style="width: 200px;"></div>
+
+              <p>
+                <label for="Living_value2">Utility of "Low" :</label>
+                <input type="text" id="Living_value2" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Living_value-2" style="width: 200px;  "></div>
+
+              <p>
+                <label for="Living_weight">The weight of Living :</label>
+                <input type="text" id="Living_weight" readonly style="border:0; color:#ef2929; font-weight:bold;">
+              </p>         
+              <div class="w" id="w-Living_value" style="width: 300px;  "></div>
+
+          </div>
+
+          <div id="Development">
+              <p class="font-size_15 font">The utility of the development degree of the country:</p>
+              <p>
+                <label for="Development_value0">Utility of "High" :</label>
+                <input type="text" id="Development_value0" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Development_value-0" style="width: 200px;"></div>
+
+              <p>
+                <label for="Development_value1">Utility of "Mid" :</label>
+                <input type="text" id="Development_value1" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Development_value-1" style="width: 200px;"></div>
+
+              <p>
+                <label for="Development_value2">Utility of "Low" :</label>
+                <input type="text" id="Development_value2" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Development_value-2" style="width: 200px;  "></div>
+
+              <p>
+                <label for="Development_weight">The weight of Living :</label>
+                <input type="text" id="Development_weight" readonly style="border:0; color:#ef2929; font-weight:bold;">
+              </p>         
+              <div class="w" id="w-Development_value" style="width: 300px;  "></div>
+
+          </div>
+
+      </div>
+
+      <div id="Climate" style=" display: none;">
+
+              <p class="font-size_15 font">The utility of the climate of the country:</p>
+              <p>
+                <label for="Climate_value0">Utility of "Hot" :</label>
+                <input type="text" id="Climate_value0" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Climate_value-0" style="width: 200px;"></div>
+
+              <p>
+                <label for="Climate_value1">Utility of "Cold" :</label>
+                <input type="text" id="Climate_value1" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Climate_value-1" style="width: 200px;"></div>
+
+              <p>
+                <label for="Climate_value2">Utility of "Mid" :</label>
+                <input type="text" id="Climate_value2" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Climate_value-2" style="width: 200px;  "></div>
+
+              <p>
+                <label for="Climate_weight">The weight of Climate :</label>
+                <input type="text" id="Climate_weight" readonly style="border:0; color:#ef2929; font-weight:bold;">
+              </p>         
+              <div class="w" id="w-Climate_value" style="width: 300px;  "></div>
+
+      </div>
+
+      <div id="Security" style=" display: none;">
+
+              <p class="font-size_15 font">The utility of the security of the country:</p>
+              <p>
+                <label for="Security_value0">Utility of "Safe" :</label>
+                <input type="text" id="Security_value0" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Security_value-0" style="width: 200px;"></div>
+
+              <p>
+                <label for="Security_value1">Utility of "Mid" :</label>
+                <input type="text" id="Security_value1" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Security_value-1" style="width: 200px;"></div>
+
+              <p>
+                <label for="Security_value2">Utility of "Not Safe" :</label>
+                <input type="text" id="Security_value2" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Security_value-2" style="width: 200px;  "></div>
+
+              <p>
+                <label for="Security_weight">The weight of Security :</label>
+                <input type="text" id="Security_weight" readonly style="border:0; color:#ef2929; font-weight:bold;">
+              </p>         
+              <div class="w" id="w-Security_value" style="width: 300px;  "></div>
+
+      </div>
+
+
+      <div id="Tuition" style=" display:none;">
+
+              <p class="font-size_15 font">The utility of the tuition of the country:</p>
+              <p>
+                <label for="Tuition_value0">Utility of "High" :</label>
+                <input type="text" id="Tuition_value0" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Tuition_value-0" style="width: 200px;"></div>
+
+              <p>
+                <label for="Tuition_value1">Utility of "Mid" :</label>
+                <input type="text" id="Tuition_value1" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Tuition_value-1" style="width: 200px;"></div>
+
+              <p>
+                <label for="Tuition_value2">Utility of "Low" :</label>
+                <input type="text" id="Tuition_value2" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Tuition_value-2" style="width: 200px;  "></div>
+
+              <p>
+                <label for="Tuition_value3">Utility of "Free" :</label>
+                <input type="text" id="Tuition_value3" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Tuition_value-3" style="width: 200px;  "></div>
+
+              <p>
+                <label for="Tuition_weight">The weight of Tuition :</label>
+                <input type="text" id="Tuition_weight" readonly style="border:0; color:#ef2929; font-weight:bold;">
+              </p>         
+              <div class="w" id="w-Tuition_value" style="width: 300px;  "></div>
+
+      </div>        
+
+      <div id="CareerImmigration" style=" display:none;">
+
+        <div id="Major">
+
+              <p class="font-size_15 font">The utility of the Major the you may get:</p>
+              <p>
+                <label for="Major_value0">Utility of "CS" :</label>
+                <input type="text" id="Major_value0" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Major_value-0" style="width: 200px;"></div>
+
+              <p>
+                <label for="Major_value1">Utility of "Business" :</label>
+                <input type="text" id="Major_value1" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Major_value-1" style="width: 200px;"></div>
+
+              <p>
+                <label for="Major_value2">Utility of "Art" :</label>
+                <input type="text" id="Major_value2" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Major_value-2" style="width: 200px;  "></div>
+
+              <p>
+                <label for="Major_value3">Utility of "Science" :</label>
+                <input type="text" id="Major_value3" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Major_value-3" style="width: 200px;  "></div>
+
+              <p>
+                <label for="TMajor_value4">Utility of "Engineer" :</label>
+                <input type="text" id="Major_value4" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Major_value-4" style="width: 200px;  "></div>
+
+              <p>
+                <label for="Major_valuee5">Utility of "FineArts" :</label>
+                <input type="text" id="Major_value5" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Major_value-5" style="width: 200px;  "></div>
+
+              <p>
+                <label for="Major_weight">The weight of Major :</label>
+                <input type="text" id="Major_weight" readonly style="border:0; color:#ef2929; font-weight:bold;">
+              </p>         
+              <div class="w" id="w-Major_value" style="width: 300px;  "></div>
+
+        </div>
+
+        <div id="Career">
+              <p class="font-size_15 font">The utility of the career:</p>
+              <p>
+                <label for="Career_value0">Utility of "High" :</label>
+                <input type="text" id="Career_value0" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Career_value-0" style="width: 200px;"></div>
+
+              <p>
+                <label for="Career_value1">Utility of "Low" :</label>
+                <input type="text" id="Career_value1" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Career_value-1" style="width: 200px;"></div>
+
+              <p>
+                <label for="Career_value2">Utility of "Mid" :</label>
+                <input type="text" id="Career_value2" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Career_value-2" style="width: 200px;  "></div>
+
+              <p>
+                <label for="Career_weight">The weight of Living :</label>
+                <input type="text" id="Career_weight" readonly style="border:0; color:#ef2929; font-weight:bold;">
+              </p>         
+              <div class="w" id="w-Career_value" style="width: 300px;  "></div>
+
+        </div>    
+
+        <div id="Immigration">
+
+              <p class="font-size_15 font">The utility of the immigration:</p>
+              <p>
+                <label for="Immigration_value0">Utility of "Easy" :</label>
+                <input type="text" id="Immigration_value0" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Immigration_value-0" style="width: 200px;"></div>
+
+              <p>
+                <label for="Immigration_value1">Utility of "Hard" :</label>
+                <input type="text" id="Immigration_value1" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Immigration_value-1" style="width: 200px;"></div>
+
+              <p>
+                <label for="Immigration_value2">Utility of "Mid" :</label>
+                <input type="text" id="Immigration_value2" readonly style="border:0; color:#729fcf; font-weight:bold;">
+              </p>         
+              <div class="v" id="v-Immigration_value-2" style="width: 200px;  "></div>
+
+              <p>
+                <label for="Immigration_weight">The weight of Immigration :</label>
+                <input type="text" id="Immigration_weight" readonly style="border:0; color:#ef2929; font-weight:bold;">
+              </p>         
+              <div class="w" id="w-Immigration_value" style="width: 300px;  "></div>
+
+        </div> 
+
+      </div>
+    </div>
+
+    <div class="rightSide">
+      <div id="nav">
+        <ul class="ul">
+          <li id="n1">Living Standard</li>
+          <li id="n2">Climate</li> 
+          <li id="n3">Security</li> 
+          <li id="n4">Tuition</li> 
+          <li id="n5">Career Immigration</li>                     
+        </ul>
+      </div>
+
+      <form action="../Cselector" method="post">
+      <input class="unvisible" name="v-Living_value-0" value="50">
+      <input class="unvisible" name="v-Living_value-1" value="50">
+      <input class="unvisible" name="v-Living_value-2" value="50">
+      <input class="unvisible" name="w-Living_value" value="50">
+
+      <input class="unvisible" name="v-Development_value-0" value="50">
+      <input class="unvisible" name="v-Development_value-1" value="50">
+      <input class="unvisible" name="v-Development_value-2" value="50">
+      <input class="unvisible" name="w-Development_value" value="50">
+
+      <input class="unvisible" name="v-Climate_value-0" value="50">
+      <input class="unvisible" name="v-Climate_value-1" value="50">
+      <input class="unvisible" name="v-Climate_value-2" value="50">
+      <input class="unvisible" name="w-Climate_value" value="50">
+
+      <input class="unvisible" name="v-Security_value-0" value="50">
+      <input class="unvisible" name="v-Security_value-1" value="50">
+      <input class="unvisible" name="v-Security_value-2" value="50">
+      <input class="unvisible" name="w-Security_value" value="50">
+
+      <input class="unvisible" name="v-Tuition_value-0" value="50">
+      <input class="unvisible" name="v-Tuition_value-1" value="50">
+      <input class="unvisible" name="v-Tuition_value-2" value="50">
+      <input class="unvisible" name="v-Tuition_value-3" value="50">
+      <input class="unvisible" name="w-Tuition_value" value="50">
+
+      <input class="unvisible" name="v-Major_value-0" value="50">
+      <input class="unvisible" name="v-Major_value-1" value="50">
+      <input class="unvisible" name="v-Major_value-2" value="50">
+      <input class="unvisible" name="v-Major_value-3" value="50">
+      <input class="unvisible" name="v-Major_value-4" value="50">
+      <input class="unvisible" name="v-Major_value-5" value="50">
+      <input class="unvisible" name="w-Major_value" value="50">
+
+      <input class="unvisible" name="v-Career_value-0" value="50">
+      <input class="unvisible" name="v-Career_value-1" value="50">
+      <input class="unvisible" name="v-Career_value-2" value="50">
+      <input class="unvisible" name="w-Career_value" value="50">
+
+      <input class="unvisible" name="v-Immigration_value-0" value="50">
+      <input class="unvisible" name="v-Immigration_value-0" value="50">
+      <input class="unvisible" name="v-Immigration_value-0" value="50">
+      <input class="unvisible" name="w-Immigration_value" value="50">
+
+      <input type="submit" value="Submit" style="width:200px; height:25px;">  
+      </form>
+    </div>
+
+    <div id="navigation">
+        <a id="before" href=#>Before</a>&nbsp&nbsp    
+        <a id="next" href=#>Next</a>
+    </div>
+
+  </div>
+
+
+ 
+</body>
+</html>

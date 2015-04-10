@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Network1" numsamples="1000" discsamples="10000">
+	<nodes>
+		<decision id="Country_Select">
+			<state id="US" />
+			<state id="UK" />
+			<state id="Australia" />
+			<state id="Canada" />
+			<state id="Japan" />
+			<state id="Singapore" />
+			<state id="German" />
+			<state id="NewZealand" />
+			<state id="HongKong" />
+			<state id="SouthKorea" />
+			<state id="NorthEurope" />
+			<state id="France" />
+			<state id="Russia" />
+		</decision>
+		<cpt id="Tuition_Fee">
+			<state id="High" />
+			<state id="Mid" />
+			<state id="Low" />
+			<state id="Free" />
+			<parents>Country_Select</parents>
+			<probabilities>0.8 0.12 0.08 0 0.71 0.284 0.006 0 0.75 0.175 0.075 0 0.6800000000000001 0.224 0.096 0 0.222 0.348 0.43 0 0.38 0.5 0.12 0 0.06000000000000005 0.1 0.11 0.73 0.75 0.175 0.075 0 0.38 0.5 0.12 0 0.21 0.351 0.4390000000000001 0 0.201 0.5389999999999999 0.12 0.14 0.123 0.23 0.447 0.2 0.18 0.25 0.5700000000000001 0</probabilities>
+		</cpt>
+		<cpt id="Development_Degree">
+			<state id="High" />
+			<state id="Mid" />
+			<state id="Low" />
+			<parents>Country_Select</parents>
+			<probabilities>1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 1 0 0 1 0 0 0 1 0 1 0 0 0 1 0</probabilities>
+		</cpt>
+		<cpt id="Cost_of_Living">
+			<state id="High" />
+			<state id="Mid" />
+			<state id="Low" />
+			<parents>Development_Degree Country_Select</parents>
+			<probabilities>0 1 0 1 0 0 1 0 0 0 1 0 0 1 0 0 0 1 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0 1 0 0 0 0 1 0 1 0 1 0 0 1 0 0 0 1 0 0 1 0 0 0 1 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0 1 0 0 0 0 1 0 1 0 1 0 0 1 0 0 0 1 0 0 1 0 0 0 1 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0 1 0 0 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Climate">
+			<state id="Hot" />
+			<state id="Cold" />
+			<state id="Mid" />
+			<parents>Country_Select</parents>
+			<probabilities>0.3 0.3 0.4 0.2 0.2 0.6 0.7 0.1 0.2 0.2 0.7 0.1 0.2 0.2 0.6 0.7 0.05 0.25 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.7 0.1 0.2 0.8 0.1 0.1 0.1 0.3 0.6 0.15 0.7 0.15 0.3333333333333333 0.3333333333333333 0.3333333333333334 0.1 0.8 0.1</probabilities>
+		</cpt>
+		<cpt id="Major">
+			<state id="CS" />
+			<state id="Business" />
+			<state id="Art" />
+			<state id="Science" />
+			<state id="Engineer" />
+			<state id="FineArts" />
+			<parents>Country_Select</parents>
+			<probabilities>0.22 0.23 0.05 0.2 0.2 0.09999999999999998 0.06896551724137931 0.4827586206896551 0.1379310344827586 0.103448275862069 0.06896551724137931 0.1379310344827586 0.05882352941176471 0.4117647058823529 0.1764705882352941 0.1176470588235294 0.1176470588235294 0.1176470588235294 0.3888888888888888 0.2222222222222222 0.05555555555555555 0.1111111111111111 0.1111111111111111 0.1111111111111112 0.08695652173913043 0.08695652173913043 0.1739130434782609 0.3043478260869565 0.2173913043478261 0.1304347826086957 0.1 0.35 0.1 0.15 0.2 0.09999999999999987 0.1 0.15 0.15 0.2 0.35 0.04999999999999982 0.1538461538461539 0.2307692307692308 0.1538461538461539 0.1538461538461539 0.1538461538461539 0.1538461538461537 0.15 0.4 0.1 0.1 0.15 0.09999999999999998 0.09523809523809523 0.3333333333333333 0.09523809523809523 0.09523809523809523 0.1428571428571429 0.2380952380952381 0.1052631578947368 0.2631578947368421 0.1052631578947368 0.1578947368421053 0.1578947368421053 0.2105263157894737 0.05 0.25 0.15 0.1 0.1 0.35 0.1666666666666667 0.08333333333333333 0.08333333333333333 0.2916666666666666 0.2916666666666666 0.08333333333333337</probabilities>
+		</cpt>
+		<cpt id="Career_prospects_">
+			<state id="High" />
+			<state id="Low" />
+			<state id="Mid" />
+			<parents>Country_Select Major</parents>
+			<probabilities>0.6000000000000001 0.2 0.2 0.5416666666666666 0.2083333333333333 0.25 0.5 0.2 0.3 0.4 0.2 0.3999999999999999 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.2 0.5 0.3 0.1 0.3 0.6000000000000001 0.1 0.7000000000000001 0.2 0.1 0.7 0.2000000000000001 0.2 0.7000000000000001 0.1 0.1 0.7000000000000001 0.2 0.1 0.7 0.2000000000000001 0.09090909090909091 0.6363636363636364 0.2727272727272727 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.5 0.2 0.3 0.2 0.65 0.1499999999999999 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.1 0.8 0.1 0.5 0.2 0.3 0.5 0.2 0.3 0.5 0.2 0.3 0.4444444444444444 0.2222222222222222 0.3333333333333334 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.1 0.8 0.1 0.5 0.2 0.3 0.1 0.7000000000000001 0.2 0.4 0.2 0.4 0.5416666666666666 0.2083333333333333 0.25 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.1 0.8 0.1 0.1 0.7000000000000001 0.2 0.6000000000000001 0.2 0.2 0.4 0.2 0.4 0.1 0.7000000000000001 0.2 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.1 0.8 0.1 0.1 0.7000000000000001 0.2 0.5 0.3 0.2 0.2 0.4 0.4 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.1 0.8 0.1 0.1 0.7000000000000001 0.2 0.09090909090909091 0.6363636363636364 0.2727272727272727 0.4 0.2 0.4 0.5 0.2 0.3 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.4 0.2 0.4 0.1 0.7000000000000001 0.2 0.5 0.2 0.3 0.4 0.2 0.4 0.1 0.7000000000000001 0.2 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.2 0.5 0.3 0.1 0.7000000000000001 0.2 0.5 0.2 0.3 0.2 0.4 0.4 0.3 0.6000000000000001 0.09999999999999987 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.1 0.7 0.2000000000000001 0.1 0.7000000000000001 0.2 0.1 0.7000000000000001 0.2 0.4 0.2 0.3999999999999999 0.6000000000000001 0.2 0.2 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.4 0.3 0.3 0.1 0.7000000000000001 0.2 0.1 0.7 0.2000000000000001 0.1 0.7 0.2000000000000001 0.1 0.3333333333333333 0.5666666666666667 0.1 0.3333333333333333 0.5666666666666667 0.2 0.55 0.25 0.4444444444444444 0.2222222222222222 0.3333333333333334 0.5 0.2 0.3 0.25 0.6 0.15 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.1 0.65 0.25</probabilities>
+		</cpt>
+		<cpt id="Immigration">
+			<state id="Easy" />
+			<state id="Hard" />
+			<state id="Mid" />
+			<parents>Country_Select Major</parents>
+			<probabilities>0.6000000000000001 0.2 0.2 0.5 0.3 0.2 0.09090909090909091 0.6363636363636364 0.2727272727272727 0.5 0.2 0.3 0.5 0.2 0.3 0.1 0.7000000000000001 0.2 0.1 0.7000000000000001 0.2 0.1 0.7000000000000001 0.2 0.1 0.7000000000000001 0.2 0.1 0.7000000000000001 0.2 0.1 0.7000000000000001 0.2 0.1 0.7000000000000001 0.2 0.4444444444444444 0.2222222222222222 0.3333333333333334 0.5416666666666666 0.2083333333333333 0.25 0.1 0.7000000000000001 0.2 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.5 0.2 0.3 0.1 0.7000000000000001 0.2 0.6000000000000001 0.2 0.2 0.5 0.3 0.2 0.09090909090909091 0.6363636363636364 0.2727272727272727 0.5 0.2 0.3 0.5 0.2 0.3 0.1 0.7000000000000001 0.2 0.5 0.2 0.3 0.5 0.2 0.3 0.5 0.2 0.3 0.5 0.2 0.3 0.5 0.2 0.3 0.5 0.2 0.3 0.4 0.2 0.4 0.4 0.2 0.4 0.2 0.4 0.4 0.4 0.2 0.4 0.4 0.2 0.4 0.2 0.4 0.4 0.4 0.2 0.3999999999999999 0.4 0.2 0.3999999999999999 0.25 0.6 0.15 0.4 0.2 0.3999999999999999 0.6000000000000001 0.1 0.2999999999999999 0.2 0.65 0.1499999999999999 0.4444444444444444 0.2222222222222222 0.3333333333333334 0.5416666666666666 0.2083333333333333 0.25 0.1 0.7000000000000001 0.2 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.5 0.2 0.3 0.1 0.7000000000000001 0.2 0.3 0.6000000000000001 0.09999999999999987 0.6000000000000001 0.2 0.2 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.1 0.7000000000000001 0.2 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.2 0.5 0.3 0.1 0.8 0.1 0.1 0.8 0.1 0.1 0.8 0.1 0.1 0.8 0.1 0.1 0.8 0.1 0.1 0.8 0.1 0.4 0.2 0.4 0.2 0.5 0.3 0.1 0.7 0.2000000000000001 0.4 0.3 0.3 0.4 0.25 0.35 0.1 0.65 0.25</probabilities>
+		</cpt>
+		<cpt id="Security">
+			<state id="Safe" />
+			<state id="Mid" />
+			<state id="NotSafe" />
+			<parents>Country_Select</parents>
+			<probabilities>0.4 0.4 0.2 0.4 0.4 0.2 0.6 0.2 0.2 0.65 0.25 0.1 0.6800000000000001 0.22 0.1 0.8100000000000001 0.16 0.03 0.77 0.15 0.08 0.8 0.17 0.03 0.83 0.1500000000000001 0.02 0.71 0.16 0.13 0.48 0.22 0.3 0.54 0.16 0.3 0.4 0.2 0.4</probabilities>
+		</cpt>
+		<utility id="Living_value">
+			<parents>Cost_of_Living</parents>
+			<utilities>82 50 50</utilities>
+		</utility>
+		<utility id="Development_value">
+			<parents>Development_Degree</parents>
+			<utilities>50 50 50</utilities>
+		</utility>
+		<utility id="Climate_value">
+			<parents>Climate</parents>
+			<utilities>50 50 50</utilities>
+		</utility>
+		<utility id="Security_value">
+			<parents>Security</parents>
+			<utilities>50 50 50</utilities>
+		</utility>
+		<utility id="Tuition_value">
+			<parents>Tuition_Fee</parents>
+			<utilities>50 50 50 50</utilities>
+		</utility>
+		<utility id="Immigration_value">
+			<parents>Immigration</parents>
+			<utilities>50 50 50</utilities>
+		</utility>
+		<utility id="Major_value">
+			<parents>Major</parents>
+			<utilities>50 50 50 50 50 50</utilities>
+		</utility>
+		<utility id="Career_value">
+			<parents>Career_prospects_</parents>
+			<utilities>50 50 50</utilities>
+		</utility>
+		<mau id="Result">
+			<parents>Living_value Development_value Climate_value Security_value Tuition_value Immigration_value Major_value Career_value</parents>
+			<weights>50 50 50 50 50 50 50 50</weights>
+		</mau>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.0.5494.1" name="Network1" faultnameformat="nodestate">
+			<node id="Country_Select">
+				<name>Country Select</name>
+				<interior color="02fdab" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="22" />
+				<position>649 26 790 122</position>
+			</node>
+			<node id="Result">
+				<name>Result</name>
+				<interior color="00ccff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="22" />
+				<position>647 601 820 689</position>
+			</node>
+			<submodel id="Living_Standard">
+				<name>Living Standard</name>
+				<interior color="ffffff" />
+				<outline color="000080" width="2" />
+				<font color="000000" name="Arial" size="22" />
+				<position>131 267 296 366</position>
+				<node id="Cost_of_Living">
+					<name>Cost of Living</name>
+					<interior color="ff9900" />
+					<outline color="000080" />
+					<font color="000000" name="Arial" size="22" />
+					<position>89 181 277 298</position>
+				</node>
+				<node id="Development_Degree">
+					<name>Development Degree</name>
+					<interior color="ff9900" />
+					<outline color="000080" />
+					<font color="000000" name="Arial" size="22" />
+					<position>383 97 645 260</position>
+				</node>
+				<node id="Living_value">
+					<name>Living_value</name>
+					<interior color="02fdab" />
+					<outline color="000080" />
+					<font color="000000" name="Arial" size="22" />
+					<position>105 506 353 594</position>
+				</node>
+				<node id="Development_value">
+					<name>Development_value</name>
+					<interior color="02fdab" />
+					<outline color="000080" />
+					<font color="000000" name="Arial" size="22" />
+					<position>382 458 751 546</position>
+				</node>
+			</submodel>
+			<submodel id="Climate_2">
+				<name>Climate</name>
+				<interior color="ffffff" />
+				<outline color="000080" width="2" />
+				<font color="000000" name="Arial" size="22" />
+				<position>403 288 540 345</position>
+				<node id="Climate">
+					<name>Climate</name>
+					<interior color="ff9900" />
+					<outline color="000080" />
+					<font color="000000" name="Arial" size="22" />
+					<position>556 225 705 318</position>
+				</node>
+				<node id="Climate_value">
+					<name>Climate_value</name>
+					<interior color="02fdab" />
+					<outline color="000080" />
+					<font color="000000" name="Arial" size="22" />
+					<position>520 373 796 461</position>
+				</node>
+			</submodel>
+			<submodel id="Security_2">
+				<name>Security</name>
+				<interior color="ffffff" />
+				<outline color="000080" width="2" />
+				<font color="000000" name="Arial" size="22" />
+				<position>654 294 800 351</position>
+				<node id="Security">
+					<name>Security</name>
+					<interior color="ff9900" />
+					<outline color="000080" />
+					<font color="000000" name="Arial" size="22" />
+					<position>643 199 809 302</position>
+				</node>
+				<node id="Security_value">
+					<name>Security_value</name>
+					<interior color="02fdab" />
+					<outline color="000080" />
+					<font color="000000" name="Arial" size="22" />
+					<position>615 362 900 450</position>
+				</node>
+			</submodel>
+			<submodel id="TuitionFee">
+				<name>TuitionFee</name>
+				<interior color="ffffff" />
+				<outline color="000080" width="2" />
+				<font color="000000" name="Arial" size="22" />
+				<position>893 292 1081 349</position>
+				<node id="Tuition_Fee">
+					<name>Tuition Fee</name>
+					<interior color="ff9900" />
+					<outline color="000080" />
+					<font color="000000" name="Arial" size="22" />
+					<position>784 239 968 354</position>
+				</node>
+				<node id="Tuition_value">
+					<name>Tuition_value</name>
+					<interior color="02fdab" />
+					<outline color="000080" />
+					<font color="000000" name="Arial" size="22" />
+					<position>761 421 1025 509</position>
+				</node>
+			</submodel>
+			<submodel id="Career_and_Immigration">
+				<name>Career and Immigration</name>
+				<interior color="ffffff" />
+				<outline color="000080" width="2" />
+				<font color="000000" name="Arial" size="22" />
+				<position>1185 266 1390 365</position>
+				<node id="Major">
+					<name>Major</name>
+					<interior color="ff9900" />
+					<outline color="000080" />
+					<font color="000000" name="Arial" size="22" />
+					<position>1314 9 1438 86</position>
+				</node>
+				<node id="Career_prospects_">
+					<name>Career prospects </name>
+					<interior color="ff9900" />
+					<outline color="000080" />
+					<font color="000000" name="Arial" size="22" />
+					<position>794 107 1032 259</position>
+				</node>
+				<node id="Immigration">
+					<name>Immigration</name>
+					<interior color="ff9900" />
+					<outline color="000080" />
+					<font color="000000" name="Arial" size="22" />
+					<position>1343 314 1584 464</position>
+				</node>
+				<node id="Career_value">
+					<name>Career_value</name>
+					<interior color="02fdab" />
+					<outline color="000080" />
+					<font color="000000" name="Arial" size="22" />
+					<position>618 325 883 413</position>
+				</node>
+				<node id="Major_value">
+					<name>Major_value</name>
+					<interior color="02fdab" />
+					<outline color="000080" />
+					<font color="000000" name="Arial" size="22" />
+					<position>936 460 1183 548</position>
+				</node>
+				<node id="Immigration_value">
+					<name>Immigration_value</name>
+					<interior color="02fdab" />
+					<outline color="000080" />
+					<font color="000000" name="Arial" size="22" />
+					<position>1208 583 1552 671</position>
+				</node>
+			</submodel>
+		</genie>
+	</extensions>
+</smile>

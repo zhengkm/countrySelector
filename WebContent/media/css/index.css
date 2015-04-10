@@ -1,0 +1,65 @@
+.font {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+}
+.font-size_25 {
+  font-size: 30px;
+  font-weight: 200;
+}
+.font-size_15 {
+  font-size: 21px;
+  color: #0C79ED;
+  text-shadow:0px 0px 1px #000
+}
+#red, #blue {
+    float: left;
+    clear: left;
+    width: 300px;
+    margin: 15px;
+  }
+  #swatch {
+    width: 120px;
+    height: 100px;
+    margin-top: 18px;
+    margin-left: 350px;
+    background-image: none;
+  }
+  .w .ui-slider-range { background: #ef2929; }
+  .w .ui-slider-handle { border-color: #ef2929; }
+
+  .v .ui-slider-range { background: #729fcf; }
+  .v .ui-slider-handle { border-color: #729fcf; }
+  
+  #ValueSelect {
+    float: left;
+  }
+  .unvisible {
+    display: none;
+  }
+  .bodyDiv {
+    margin-left: 20%;  
+    margin-right: 20%; 
+  }
+  .rightSide {
+    float: right;
+  }
+  #navigation {
+    padding-top: 30px;
+    clear: both;
+  }
+  .ul {
+    list-style: none;
+    padding: 0px 0px;
+  }
+.ul li {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  color: #729FCF; 
+  margin-bottom: 10px;
+}
+.ul li:hover {
+  background-color: #D3DCE6;
+}
+
+
+
